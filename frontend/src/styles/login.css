@@ -1,0 +1,211 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+:root {
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --input-bg: #f1f5f9;
+  --border-color: #e2e8f0;
+  --primary: #1e70ff;
+}
+
+[data-theme="dark"] {
+  --bg-overlay: rgba(0, 0, 0, 0.65);
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #cbd5f5;
+  --input-bg: #334155;
+  --border-color: #475569;
+  --primary: #3b82f6;
+}
+
+/* =========================
+   PAGE
+========================= */
+.login-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.75),
+      rgba(255,255,255,0.75)
+    ),
+    url('../assets/bg-login.jpg') center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dark mode overlay */
+[data-theme="dark"] .login-page {
+  background:
+    linear-gradient(
+      rgba(10,30,70,0.75),
+      rgba(10,30,70,0.75)
+    ),;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   CARD
+========================= */
+.login-card {
+  width: 420px;
+  padding: 32px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+
+  color: var(--text-main);
+}
+
+/* Dark frosted glass */
+[data-theme="dark"] .login-card {
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+/* =========================
+   TEXT
+========================= */
+.login-card h2 {
+  margin-top: 24px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+/* =========================
+   INPUT
+========================= */
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+[data-theme="dark"] .input-group {
+  background: rgba(51,65,85,0.65);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.input-group input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.input-group svg {
+  color: var(--text-muted);
+}
+
+.eye-icon {
+  cursor: pointer;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-login {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-footer span {
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* =========================
+   ERROR
+========================= */
+.error-text {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+.login-copyright {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #e5e7eb;
+}

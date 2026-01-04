@@ -1,0 +1,22 @@
+:root {
+  --primary: #1e88ff;
+  --primary-hover: #3b9cff;
+
+  --bg-overlay: rgba(10, 40, 90, 0.75);
+
+  --card-bg: rgba(20, 50, 100, 0.75);
+  --card-border: rgba(255,255,255,0.15);
+
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+
+  --input-bg: rgba(255,255,255,0.08);
+  --input-border: rgba(255,255,255,0.25);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text-main);
+  background: #0b1e3b;
+}
